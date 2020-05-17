@@ -20,7 +20,19 @@ class MyHomePage extends StatelessWidget {
     return Scaffold(
         appBar: AppBar(
           title: Text('Flutter App'),
+          actions: <Widget>[
+            IconButton(
+              icon: Icon(Icons.add),
+              onPressed: () {
+                print("Button Pressend");
+              },
+            )
+          ],
         ),
+        floatingActionButton: FloatingActionButton(
+          child: Icon(Icons.add),
+        ),
+        floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
         body: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.stretch,
