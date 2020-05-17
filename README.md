@@ -1,6 +1,6 @@
-# cexpenseplanner
+# Expense Planner
 
-A new Flutter application.
+In making
 
 ## Getting Started
 
