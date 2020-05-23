@@ -4,9 +4,9 @@
 // utility that Flutter provides. For example, you can send tap and scroll
 // gestures. You can also use WidgetTester to find child widgets in the widget
 // tree, read text, and verify that the values of widget properties are corre
-import 'package:cexpenseplanner/main.dart';
+//import 'package:cexpenseplanner/main.dart';
 import 'package:flutter/material.dart';
-//import 'package:flutter_complete_guide/main.dart';
+import 'package:flutter_complete_guide/main.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {
@@ -20,7 +20,7 @@ void main() {
 
     // Tap the '+' icon and trigger a frame.
     await tester.tap(find.byIcon(Icons.add));
-    await tester.pump();`
+    await tester.pump();
 
     // Verify that our counter has incremented.
     expect(find.text('0'), findsNothing);
